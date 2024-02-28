@@ -29,7 +29,7 @@ body {
   background-image: url("../MEDIA/card_bg.jpg");
   border: 1px solid black;
   border-radius: 20px;
-  box-shadow: #D2AA48 0 0 50px;
+  box-shadow: #cea849 0 0 50px;
   width: 300px;
   height: 600px;
   display: grid;
@@ -103,13 +103,29 @@ body {
   display: none;
   height: 80%;
   width: 80%;
-  border: solid white;
+  border: solid rgb(145, 68, 23);
+  border-radius: 15px;
   position: absolute;
   left: 20%;
   color: white;
+  font-family: Star-Wars;
 }
-
+#datos p{
+  color: #FC0;
+  font-size: 2rem;
+  text-align: center;
+}
+#datos h2,#datos h3{
+  margin: 20px;
+  color: rgb(145, 68, 23);
+  font-size: 3rem;
+  text-align: center;
+}
+#datos h2:hover,#datos h3:hover,#datos p:hover{
+  scale: 1.2;
+}
 #volver {
+  margin: 50px;
   width: 100px;
   height: 50px;
   font-size: large;
@@ -136,6 +152,7 @@ body {
   background-color: grey;
   animation: lluvia linear infinite;
 }
+
 @keyframes lluvia {
   0%{
     top: -10px;

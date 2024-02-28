@@ -68,3 +68,21 @@ $(document).ready(function() {
     });
   }
 });
+function generarLuvia(nGotas) {
+  const  divLuvia =$(".lluvia");
+for (let i = 0; i < nGotas; i++) {
+  const gota=$("<gota></gota>");
+  const tamano=Math.random()*$(window).width();
+  const tempo=20*Math.random();
+  const altura=Math.floor(Math.random()*10)+5;
+  gota.css({
+    "animation-duration": tempo+"s",
+    "left": tamano+"px",
+    "height": altura+"px",
+    "opacity":Math.random()
+  });
+  divLuvia.append(gota);
+}
+}
+
+generarLuvia(600);

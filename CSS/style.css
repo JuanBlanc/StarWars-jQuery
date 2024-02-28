@@ -122,3 +122,26 @@ body {
 #volver:hover {
   transform: scale(1.1);
 }
+.lluvia{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+.lluvia gota{
+  position: absolute;
+  width:2px;
+  height: 10px;
+  top: -10px;
+  background-color: grey;
+  animation: lluvia linear infinite;
+}
+@keyframes lluvia {
+  0%{
+    top: -10px;
+  }
+  100%{
+    top:100vh;
+  }
+
+}
